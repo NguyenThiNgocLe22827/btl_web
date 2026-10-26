@@ -1,0 +1,68 @@
+.profile-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 28px;
+  padding-bottom: 80px;
+}
+.profile-menu {
+  padding: 22px;
+  align-self: start;
+}
+.profile-menu nav {
+  display: grid;
+  gap: 8px;
+}
+.profile-menu a,
+.profile-menu button {
+  padding: 11px 13px;
+  text-align: left;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  font-weight: 700;
+}
+.profile-menu a.active,
+.profile-menu a:hover {
+  background: var(--yellow-soft);
+}
+.profile-card {
+  padding: 30px;
+}
+.profile-card h2 {
+  margin-bottom: 22px;
+}
+.order-list {
+  display: grid;
+  gap: 18px;
+}
+.order-card {
+  padding: 22px;
+}
+.order-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 13px;
+}
+.order-id {
+  font-weight: 900;
+}
+.order-status {
+  color: var(--success);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+.order-mini-items {
+  display: grid;
+  gap: 7px;
+  padding: 13px 0;
+  border-block: 1px solid #dddcd6;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+.order-card-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 13px;
+}

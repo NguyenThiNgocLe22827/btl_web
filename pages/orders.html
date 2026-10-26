@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Lịch sử đơn | TEXAS CHICKEN</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/global.css?v=3" />
+    <link rel="stylesheet" href="../css/components.css?v=2" />
+    <link rel="stylesheet" href="../css/auth.css" />
+    <link rel="stylesheet" href="../css/responsive.css?v=2" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Bỏ qua đến nội dung</a>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="brand" href="../index.html"
+          ><img class="brand-logo" src="../assets/logo-page.png" alt="" aria-hidden="true" />TEXAS</a
+        >
+        <div class="nav-links" data-nav-links>
+          <a class="nav-link" href="../index.html">Trang chủ</a
+          ><a class="nav-link" href="menu.html">Menu</a
+          ><a class="nav-link" href="menu.html?category=combo">Combo</a
+          ><a class="nav-link" href="../index.html#promotions">Khuyến mãi</a>
+        </div>
+        <div class="nav-actions">
+          <a class="icon-link" href="cart.html" aria-label="Giỏ hàng"
+            >🛒<span class="cart-badge" data-cart-count>0</span></a
+          ><button
+            class="icon-link mobile-toggle"
+            type="button"
+            data-menu-toggle
+            aria-expanded="false"
+            aria-label="Mở menu"
+          >
+            ☰
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main id="main" class="site-main">
+      <header class="page-hero container">
+        <h1>Lịch sử đơn hàng</h1>
+        <p>Theo dõi những đơn được đặt bằng tài khoản hiện tại.</p>
+      </header>
+      <div class="container profile-layout">
+        <aside class="profile-menu card">
+          <nav>
+            <a href="profile.html">Thông tin cá nhân</a
+            ><a class="active" href="orders.html">Lịch sử đơn hàng</a
+            ><button type="button" data-logout>Đăng xuất</button>
+          </nav>
+        </aside>
+        <section>
+          <div class="empty-state card" data-orders-empty hidden>
+            <div class="empty-icon">🧾</div>
+            <h2>Chưa có đơn hàng</h2>
+            <p>Đơn đặt khi đăng nhập sẽ xuất hiện tại đây.</p>
+            <a class="btn btn-primary" href="menu.html">Chọn món ngay</a>
+          </div>
+          <div class="order-list" data-order-list></div>
+        </section>
+      </div>
+    </main>
+    <script src="../data/products.js?v=3"></script>
+    <script src="../js/storage.js?v=2"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/main.js?v=3"></script>
+    <script src="../js/products.js?v=3"></script>
+  </body>
+</html>

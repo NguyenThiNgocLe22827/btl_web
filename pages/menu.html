@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Menu | TEXAS CHICKEN</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/global.css?v=3" />
+    <link rel="stylesheet" href="../css/components.css?v=2" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/responsive.css?v=2" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Bỏ qua đến nội dung</a>
+    <div class="promo-strip">
+      Freeship đơn từ <strong>199K</strong> · Dùng mã
+      <strong>TEXAS_NUM1</strong>
+    </div>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Điều hướng chính">
+        <a class="brand" href="../index.html"
+          ><img class="brand-logo" src="../assets/logo-page.png" alt="" aria-hidden="true" />TEXAS</a
+        >
+        <div class="nav-links" data-nav-links>
+          <a class="nav-link" href="../index.html">Trang chủ</a
+          ><a class="nav-link active" href="menu.html">Menu</a
+          ><a class="nav-link" href="menu.html?category=combo">Combo</a
+          ><a class="nav-link" href="../index.html#promotions">Khuyến mãi</a>
+        </div>
+        <div class="nav-actions">
+          <a
+            class="icon-link search-link"
+            href="menu.html"
+            aria-label="Tìm kiếm"
+            >⌕</a
+          ><a
+            class="icon-link"
+            data-account-link
+            href="login.html"
+            aria-label="Tài khoản"
+            >♙<span class="profile-text sr-only">Đăng nhập</span></a
+          ><a class="icon-link" href="cart.html" aria-label="Giỏ hàng"
+            >🛒<span class="cart-badge" data-cart-count>0</span></a
+          ><button
+            class="icon-link mobile-toggle"
+            type="button"
+            data-menu-toggle
+            aria-expanded="false"
+            aria-label="Mở menu"
+          >
+            ☰
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main id="main" class="site-main">
+      <header class="page-hero container">
+        <div class="breadcrumbs">
+          <a href="../index.html">Trang chủ</a><span>/</span><span>Menu</span>
+        </div>
+        <h1>Menu giòn ngon</h1>
+        <p><span data-menu-total>0</span> lựa chọn được chuẩn bị để bạn dễ tìm đúng món cho bữa hôm nay.</p>
+      </header>
+      <div class="container">
+        <div
+          class="pill-tabs"
+          data-category-tabs
+          aria-label="Danh mục món"
+        ></div>
+        <button
+          class="btn btn-secondary mobile-filter-btn"
+          data-filter-toggle
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-filters"
+        >
+          <span aria-hidden="true">⚙</span> Bộ lọc món
+        </button>
+        <div class="menu-layout">
+          <aside
+            class="filter-panel card"
+            id="menu-filters"
+            aria-label="Bộ lọc món ăn"
+          >
+            <div class="filter-heading">
+              <span class="filter-heading-icon" aria-hidden="true">⌁</span>
+              <div>
+                <h2>Tìm món hợp gu</h2>
+                <p>Lọc nhanh theo tên và mức giá</p>
+              </div>
+            </div>
+            <div class="filter-group">
+              <label for="menu-search" class="field-label">Tìm kiếm</label>
+              <div class="filter-control">
+                <span class="filter-control-icon" aria-hidden="true">⌕</span>
+                <input
+                  class="input filter-input"
+                  id="menu-search"
+                  type="search"
+                  placeholder="Gà giòn, burger…"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+            <div class="filter-group">
+              <div class="filter-label-row">
+                <label for="price-filter" class="field-label">Khoảng giá</label>
+                <span>VND</span>
+              </div>
+              <div class="filter-control">
+                <span class="filter-control-icon" aria-hidden="true">₫</span>
+                <select class="select filter-select" id="price-filter">
+                  <option value="all">Tất cả mức giá</option>
+                  <option value="under-50">Dưới 50K</option>
+                  <option value="50-100">Từ 50K – 100K</option>
+                  <option value="over-100">Trên 100K</option>
+                </select>
+              </div>
+            </div>
+            <button class="filter-reset" type="button" data-filter-reset>
+              <span aria-hidden="true">↻</span> Đặt lại bộ lọc
+            </button>
+            <div class="filter-tip">
+              <span aria-hidden="true">⚡</span>
+              <p><strong>Freeship tự động</strong> khi đơn từ 199K.</p>
+            </div>
+          </aside>
+          <section aria-label="Danh sách món">
+            <div class="menu-toolbar card">
+              <div class="toolbar-results">
+                <span>Kết quả</span>
+                <strong data-result-count>0 món</strong>
+                <small>Giá đã gồm VAT</small>
+              </div>
+              <div class="sort-control">
+                <label for="menu-sort">Sắp xếp</label>
+                <select class="select" id="menu-sort">
+                  <option value="default">Sắp xếp mặc định</option>
+                  <option value="price-asc">Giá thấp → cao</option>
+                  <option value="price-desc">Giá cao → thấp</option>
+                  <option value="rating">Rating cao nhất</option>
+                  <option value="popular">Bán chạy</option>
+                </select>
+              </div>
+            </div>
+            <div class="product-grid" data-menu-grid></div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="../index.html"
+              ><img class="brand-logo" src="../assets/logo-page.png" alt="" aria-hidden="true" />TEXAS</a
+            >
+            <p>Giòn ngon trong từng miếng. Website demo học tập.</p>
+          </div>
+          <div>
+            <h2 class="footer-title">Khám phá</h2>
+            <div class="footer-links">
+              <a href="menu.html">Menu</a
+              ><a href="menu.html?category=combo">Combo</a
+              ><a href="../index.html#promotions">Khuyến mãi</a>
+            </div>
+          </div>
+          <div>
+            <h2 class="footer-title">Liên hệ demo</h2>
+            <div class="footer-links">
+              <span>1900 2026</span><span>08:00 – 22:00</span>
+            </div>
+          </div>
+        </div>
+        <div class="copyright"><span>© 2026 Texas Chicken. Demo project.</span></div>
+      </div>
+    </footer>
+    <script src="../data/products.js?v=3"></script>
+    <script src="../js/storage.js?v=2"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/main.js?v=3"></script>
+    <script src="../js/products.js?v=3"></script>
+  </body>
+</html>

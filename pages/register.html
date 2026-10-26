@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Đăng ký | TEXAS CHICKEN</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/global.css?v=3" />
+    <link rel="stylesheet" href="../css/components.css?v=2" />
+    <link rel="stylesheet" href="../css/auth.css" />
+    <link rel="stylesheet" href="../css/responsive.css?v=2" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Bỏ qua đến nội dung</a>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="brand" href="../index.html"
+          ><img class="brand-logo" src="../assets/logo-page.png" alt="" aria-hidden="true" />TEXAS</a
+        >
+        <div class="nav-links" data-nav-links>
+          <a class="nav-link" href="../index.html">Trang chủ</a
+          ><a class="nav-link" href="menu.html">Menu</a
+          ><a class="nav-link" href="menu.html?category=combo">Combo</a
+          ><a class="nav-link" href="../index.html#promotions">Khuyến mãi</a>
+        </div>
+        <div class="nav-actions">
+          <a class="icon-link" href="cart.html" aria-label="Giỏ hàng"
+            >🛒<span class="cart-badge" data-cart-count>0</span></a
+          ><button
+            class="icon-link mobile-toggle"
+            type="button"
+            data-menu-toggle
+            aria-expanded="false"
+            aria-label="Mở menu"
+          >
+            ☰
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main id="main" class="site-main container">
+      <div class="auth-shell card">
+        <section class="auth-art">
+          <div>
+            <img class="auth-brand-logo" src="../assets/logo-page.png" alt="Texas Chicken" />
+            <h1>Thêm bạn, thêm vui.</h1>
+            <p>Tạo tài khoản demo để lưu thông tin và xem lại đơn hàng.</p>
+          </div>
+          <small>Dữ liệu chỉ được lưu trên trình duyệt này.</small>
+        </section>
+        <section class="auth-form">
+          <h2>Tạo tài khoản</h2>
+          <p>Chỉ mất một phút để bắt đầu.</p>
+          <form class="form-stack" data-register-form novalidate>
+            <div class="field">
+              <label for="reg-name">Họ và tên</label
+              ><input
+                class="input"
+                id="reg-name"
+                name="fullName"
+                autocomplete="name"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="reg-email">Email</label
+              ><input
+                class="input"
+                id="reg-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="reg-phone">Số điện thoại</label
+              ><input
+                class="input"
+                id="reg-phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                required
+                placeholder="0901234567"
+              />
+            </div>
+            <div class="field">
+              <label for="reg-password">Mật khẩu</label
+              ><input
+                class="input"
+                id="reg-password"
+                name="password"
+                type="password"
+                autocomplete="new-password"
+                minlength="8"
+                required
+                placeholder="Tối thiểu 8 ký tự, hoa, thường, ký tự đặc biệt"
+              />
+            </div>
+            <div class="field">
+              <label for="reg-confirm">Xác nhận mật khẩu</label
+              ><input
+                class="input"
+                id="reg-confirm"
+                name="confirmPassword"
+                type="password"
+                autocomplete="new-password"
+                minlength="8"
+                required
+              />
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">
+              Đăng ký
+            </button>
+          </form>
+          <p class="auth-switch">
+            Đã có tài khoản? <a href="login.html">Đăng nhập</a>
+          </p>
+        </section>
+      </div>
+    </main>
+    <script src="../data/products.js?v=3"></script>
+    <script src="../js/storage.js?v=2"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/main.js?v=3"></script>
+    <script src="../js/products.js?v=3"></script>
+  </body>
+</html>

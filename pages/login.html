@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Đăng nhập | TEXAS CHICKEN</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/global.css?v=3" />
+    <link rel="stylesheet" href="../css/components.css?v=2" />
+    <link rel="stylesheet" href="../css/auth.css" />
+    <link rel="stylesheet" href="../css/responsive.css?v=2" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Bỏ qua đến nội dung</a>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="brand" href="../index.html"
+          ><img class="brand-logo" src="../assets/logo-page.png" alt="" aria-hidden="true" />TEXAS</a
+        >
+        <div class="nav-links" data-nav-links>
+          <a class="nav-link" href="../index.html">Trang chủ</a
+          ><a class="nav-link" href="menu.html">Menu</a
+          ><a class="nav-link" href="menu.html?category=combo">Combo</a
+          ><a class="nav-link" href="../index.html#promotions">Khuyến mãi</a>
+        </div>
+        <div class="nav-actions">
+          <a class="icon-link" href="cart.html" aria-label="Giỏ hàng"
+            >🛒<span class="cart-badge" data-cart-count>0</span></a
+          ><button
+            class="icon-link mobile-toggle"
+            type="button"
+            data-menu-toggle
+            aria-expanded="false"
+            aria-label="Mở menu"
+          >
+            ☰
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main id="main" class="site-main container">
+      <div class="auth-shell card">
+        <section class="auth-art">
+          <div>
+            <img class="auth-brand-logo" src="../assets/logo-page.png" alt="Texas Chicken" />
+            <h1>Chào mừng trở lại.</h1>
+            <p>Đăng nhập để xem lịch sử đơn và cập nhật thông tin nhanh hơn.</p>
+          </div>
+          <small>Tài khoản demo: demo@texaschicken.local / Demo@1234</small>
+        </section>
+        <section class="auth-form">
+          <h2>Đăng nhập</h2>
+          <p>Tiếp tục hành trình giòn ngon cùng Texas Chicken.</p>
+          <form class="form-stack" data-login-form novalidate>
+            <div class="field">
+              <label for="login-email">Email</label
+              ><input
+                class="input"
+                id="login-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                placeholder="you@example.com"
+              />
+            </div>
+            <div class="field">
+              <label for="login-password">Mật khẩu</label
+              ><input
+                class="input"
+                id="login-password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                required
+                placeholder="Nhập mật khẩu"
+              />
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">
+              Đăng nhập
+            </button>
+          </form>
+          <p class="auth-switch">
+            Chưa có tài khoản? <a href="register.html">Đăng ký ngay</a>
+          </p>
+        </section>
+      </div>
+    </main>
+    <script src="../data/products.js?v=3"></script>
+    <script src="../js/storage.js?v=2"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/main.js?v=3"></script>
+    <script src="../js/products.js?v=3"></script>
+  </body>
+</html>

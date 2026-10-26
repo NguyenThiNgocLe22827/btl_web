@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Thanh toán | TEXAS CHICKEN</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/global.css?v=3" />
+    <link rel="stylesheet" href="../css/components.css?v=2" />
+    <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../css/checkout.css?v=3" />
+    <link rel="stylesheet" href="../css/responsive.css?v=3" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Bỏ qua đến nội dung</a>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="brand" href="../index.html"
+          ><img class="brand-logo" src="../assets/logo-page.png" alt="" aria-hidden="true" />TEXAS</a
+        >
+        <div class="nav-links" data-nav-links>
+          <a class="nav-link" href="../index.html">Trang chủ</a
+          ><a class="nav-link" href="menu.html">Menu</a
+          ><a class="nav-link" href="menu.html?category=combo">Combo</a
+          ><a class="nav-link" href="../index.html#promotions">Khuyến mãi</a>
+        </div>
+        <div class="nav-actions">
+          <a class="icon-link" href="cart.html" aria-label="Giỏ hàng"
+            >🛒<span class="cart-badge" data-cart-count>0</span></a
+          ><button
+            class="icon-link mobile-toggle"
+            type="button"
+            data-menu-toggle
+            aria-expanded="false"
+            aria-label="Mở menu"
+          >
+            ☰
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main id="main" class="site-main">
+      <header class="page-hero container">
+        <div class="breadcrumbs">
+          <a href="cart.html">Giỏ hàng</a><span>/</span><span>Thanh toán</span>
+        </div>
+        <h1>Hoàn tất đơn hàng</h1>
+        <p>Bạn có thể đặt món với tư cách khách, không cần đăng nhập.</p>
+      </header>
+      <form class="container checkout-layout" data-checkout-form>
+        <div>
+          <section class="checkout-card card">
+            <h2>1. Thông tin nhận hàng</h2>
+            <div class="form-stack">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="checkout-name">Họ và tên</label
+                  ><input
+                    class="input"
+                    id="checkout-name"
+                    name="fullName"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <label for="checkout-phone">Số điện thoại</label
+                  ><input
+                    class="input"
+                    id="checkout-phone"
+                    name="phone"
+                    type="tel"
+                    autocomplete="tel"
+                    required
+                  />
+                </div>
+              </div>
+              <fieldset class="field">
+                <legend class="field-label">Hình thức nhận món</legend>
+                <div class="choice-grid">
+                  <div class="choice checkout-choice">
+                    <input
+                      id="delivery-home"
+                      name="deliveryType"
+                      value="delivery"
+                      type="radio"
+                      required
+                    /><label for="delivery-home"><strong>Giao tận nơi</strong><small>Giao đến địa chỉ của bạn</small></label>
+                  </div>
+                  <div class="choice checkout-choice">
+                    <input
+                      id="delivery-store"
+                      name="deliveryType"
+                      value="pickup"
+                      type="radio"
+                    /><label for="delivery-store"><strong>Nhận tại cửa hàng</strong><small>Không tính phí giao hàng</small></label>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="field checkout-reveal" data-address-fields hidden>
+                <label for="checkout-address">Địa chỉ</label
+                ><input
+                  class="input"
+                  id="checkout-address"
+                  name="address"
+                  autocomplete="street-address"
+                  placeholder="Số nhà, tên đường, phường/xã, quận/huyện"
+                />
+              </div>
+              <div class="field checkout-reveal" data-store-fields hidden>
+                <label for="checkout-store">Cửa hàng</label
+                ><select class="select" id="checkout-store" name="store">
+                  <option value="">Chọn cửa hàng</option>
+                  <option>Texas Chicken Cầu Giấy</option>
+                  <option>Texas Chicken Hà Đông</option>
+                  <option>Texas Chicken Hai Bà Trưng</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="checkout-note">Ghi chú</label
+                ><textarea
+                  class="textarea"
+                  id="checkout-note"
+                  name="note"
+                  placeholder="Ít cay, gọi trước khi giao…"
+                ></textarea>
+              </div>
+            </div>
+          </section>
+          <section class="checkout-card card checkout-reveal" data-payment-section hidden>
+            <h2>2. Thanh toán</h2>
+            <p class="checkout-section-note">Chọn phương thức phù hợp cho đơn giao tận nơi.</p>
+            <div class="choice-grid payment-choice-grid">
+              <div class="choice payment-choice">
+                <input
+                  id="pay-cod"
+                  name="paymentMethod"
+                  value="cod"
+                  type="radio"
+                  checked
+                /><label for="pay-cod"><strong>COD</strong><small>Thanh toán khi nhận</small></label>
+              </div>
+              <div class="choice payment-choice">
+                <input
+                  id="pay-card"
+                  name="paymentMethod"
+                  value="card"
+                  type="radio"
+                /><label for="pay-card"><strong>Thẻ</strong><small>Form thanh toán demo</small></label>
+              </div>
+              <div class="choice payment-choice">
+                <input
+                  id="pay-qr"
+                  name="paymentMethod"
+                  value="qr"
+                  type="radio"
+                /><label for="pay-qr"><strong>QR</strong><small>Quét mã chuyển khoản</small></label>
+              </div>
+            </div>
+            <div
+              class="form-stack"
+              data-card-fields
+              hidden
+              style="margin-top: 18px"
+            >
+              <div class="field">
+                <label for="card-number">Số thẻ demo</label
+                ><input
+                  class="input"
+                  id="card-number"
+                  name="cardNumber"
+                  inputmode="numeric"
+                  autocomplete="cc-number"
+                  maxlength="19"
+                  placeholder="1234 5678 9012 3456"
+                />
+              </div>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="card-expiry">Ngày hết hạn</label
+                  ><input
+                    class="input"
+                    id="card-expiry"
+                    name="expiry"
+                    inputmode="numeric"
+                    autocomplete="cc-exp"
+                    maxlength="5"
+                    placeholder="MM/YY"
+                  />
+                </div>
+                <div class="field">
+                  <label for="card-cvv">CVV</label
+                  ><input
+                    class="input"
+                    id="card-cvv"
+                    name="cvv"
+                    type="password"
+                    inputmode="numeric"
+                    autocomplete="cc-csc"
+                    maxlength="4"
+                    placeholder="123"
+                  />
+                </div>
+              </div>
+              <p class="muted">
+                Thông tin thẻ không được lưu. Đây chỉ là form demo.
+              </p>
+            </div>
+            <div class="qr-payment" data-qr-fields hidden>
+              <div class="demo-qr" aria-hidden="true"><span>TEXAS CHICKEN</span></div>
+              <div>
+                <strong>Quét QR để thanh toán</strong>
+                <p>Đây là mã mô phỏng. Không chuyển tiền thật.</p>
+                <small>Nội dung: TEXAS CHICKEN DEMO</small>
+              </div>
+            </div>
+          </section>
+        </div>
+        <aside class="order-summary card summary-sticky">
+          <h2>Đơn của bạn</h2>
+          <div class="checkout-items" data-checkout-items></div>
+          <div class="divider"></div>
+          <div class="summary-row">
+            <span>Tạm tính</span><strong data-summary-subtotal></strong>
+          </div>
+          <div class="summary-row">
+            <span>Phí giao</span><strong data-summary-shipping></strong>
+          </div>
+          <div class="summary-row">
+            <span>Giảm giá</span><strong data-summary-discount></strong>
+          </div>
+          <div class="summary-row summary-total">
+            <span>Tổng cộng</span><strong data-summary-total></strong>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">
+            Đặt hàng
+          </button>
+        </aside>
+      </form>
+    </main>
+    <script src="../data/products.js?v=3"></script>
+    <script src="../js/storage.js?v=2"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/main.js?v=3"></script>
+    <script src="../js/products.js?v=3"></script>
+    <script src="../js/checkout.js?v=3"></script>
+  </body>
+</html>

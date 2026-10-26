@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Giỏ hàng | TEXAS CHICKEN</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/global.css?v=3" />
+    <link rel="stylesheet" href="../css/components.css?v=2" />
+    <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../css/responsive.css?v=2" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Bỏ qua đến nội dung</a>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="brand" href="../index.html"
+          ><img class="brand-logo" src="../assets/logo-page.png" alt="" aria-hidden="true" />TEXAS</a
+        >
+        <div class="nav-links" data-nav-links>
+          <a class="nav-link" href="../index.html">Trang chủ</a
+          ><a class="nav-link" href="menu.html">Menu</a
+          ><a class="nav-link" href="menu.html?category=combo">Combo</a
+          ><a class="nav-link" href="../index.html#promotions">Khuyến mãi</a>
+        </div>
+        <div class="nav-actions">
+          <a
+            class="icon-link search-link"
+            href="menu.html"
+            aria-label="Tìm kiếm"
+            >⌕</a
+          ><a
+            class="icon-link"
+            data-account-link
+            href="login.html"
+            aria-label="Tài khoản"
+            >♙<span class="profile-text sr-only">Đăng nhập</span></a
+          ><a class="icon-link" href="cart.html" aria-label="Giỏ hàng"
+            >🛒<span class="cart-badge" data-cart-count>0</span></a
+          ><button
+            class="icon-link mobile-toggle"
+            type="button"
+            data-menu-toggle
+            aria-expanded="false"
+            aria-label="Mở menu"
+          >
+            ☰
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main id="main" class="site-main">
+      <header class="page-hero container">
+        <div class="breadcrumbs">
+          <a href="../index.html">Trang chủ</a><span>/</span
+          ><span>Giỏ hàng</span>
+        </div>
+        <h1>Giỏ hàng của bạn</h1>
+      </header>
+      <div class="container">
+        <section class="empty-state card" data-cart-empty hidden>
+          <div class="empty-icon">🛒</div>
+          <h2>Giỏ hàng đang trống</h2>
+          <p>Thêm vài món giòn ngon để bắt đầu đơn hàng nhé.</p>
+          <a class="btn btn-primary" href="menu.html">Xem menu</a>
+        </section>
+        <div data-cart-content>
+          <div class="cart-head-actions">
+            <button class="btn btn-danger" type="button" data-clear-cart>
+              Xóa toàn bộ
+            </button>
+          </div>
+          <div class="cart-layout">
+            <section
+              class="cart-list"
+              data-cart-list
+              aria-label="Món trong giỏ"
+            ></section>
+            <aside class="order-summary card summary-sticky">
+              <h2>Tóm tắt đơn</h2>
+              <form class="voucher" data-voucher-form>
+                <label class="sr-only" for="voucher-code">Mã voucher</label
+                ><input
+                  class="input"
+                  id="voucher-code"
+                  placeholder="Nhập voucher"
+                /><button class="btn btn-dark" type="submit">Áp dụng</button>
+              </form>
+              <p class="muted">Mã ưu đãi: TEXAS_NUM1 – TEXAS_NUM5</p>
+              <p class="muted" data-applied-voucher></p>
+              <div class="divider"></div>
+              <div class="summary-row">
+                <span>Tạm tính</span><strong data-summary-subtotal>0₫</strong>
+              </div>
+              <div class="summary-row">
+                <span>Phí giao hàng</span
+                ><strong data-summary-shipping>0₫</strong>
+              </div>
+              <div class="summary-row">
+                <span>Giảm giá</span><strong data-summary-discount>0₫</strong>
+              </div>
+              <div class="summary-row summary-total">
+                <span>Tổng cộng</span><strong data-summary-total>0₫</strong>
+              </div>
+              <a class="btn btn-primary btn-block" href="checkout.html"
+                >Tiến hành thanh toán →</a
+              >
+              <p class="muted" style="font-size: 0.8rem; margin-top: 12px">
+                Checkout không yêu cầu đăng nhập.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="../index.html"
+              ><img class="brand-logo" src="../assets/logo-page.png" alt="" aria-hidden="true" />TEXAS</a
+            >
+            <p>Giòn ngon trong từng miếng.</p>
+          </div>
+          <div>
+            <h2 class="footer-title">Mua thêm</h2>
+            <div class="footer-links">
+              <a href="menu.html">Menu</a
+              ><a href="menu.html?category=combo">Combo</a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright"><span>© 2026 Texas Chicken. Demo project.</span></div>
+      </div>
+    </footer>
+    <script src="../data/products.js?v=3"></script>
+    <script src="../js/storage.js?v=2"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/main.js?v=3"></script>
+    <script src="../js/products.js?v=3"></script>
+  </body>
+</html>

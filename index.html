@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Texas Chicken — Gà rán giòn ngon và combo vui trọn bữa."
+    />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <title>TEXAS CHICKEN — Giòn vui mỗi ngày</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/global.css?v=3" />
+    <link rel="stylesheet" href="css/components.css?v=3" />
+    <link rel="stylesheet" href="css/home.css?v=2" />
+    <link rel="stylesheet" href="css/responsive.css?v=3" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Bỏ qua đến nội dung</a>
+    <div class="promo-strip">
+      Freeship đơn từ <strong>199K</strong> · Dùng mã
+      <strong>TEXAS_NUM1</strong>
+    </div>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Điều hướng chính">
+        <a class="brand" href="index.html"
+          ><img class="brand-logo" src="assets/logo-page.png" alt="" aria-hidden="true" />TEXAS</a
+        >
+        <div class="nav-links" data-nav-links>
+          <a class="nav-link active" href="index.html">Trang chủ</a
+          ><a class="nav-link" href="pages/menu.html">Menu</a
+          ><a class="nav-link" href="pages/menu.html?category=combo">Combo</a
+          ><a class="nav-link" href="index.html#promotions">Khuyến mãi</a>
+        </div>
+        <div class="nav-actions">
+          <a
+            class="icon-link search-link"
+            href="pages/menu.html"
+            aria-label="Tìm kiếm"
+            >⌕</a
+          ><a
+            class="icon-link"
+            data-account-link
+            href="pages/login.html"
+            aria-label="Tài khoản"
+            ><span aria-hidden="true">♙</span
+            ><span class="profile-text sr-only">Đăng nhập</span></a
+          ><a class="icon-link" href="pages/cart.html" aria-label="Giỏ hàng"
+            >🛒<span class="cart-badge" data-cart-count>0</span></a
+          ><button
+            class="icon-link mobile-toggle"
+            type="button"
+            data-menu-toggle
+            aria-expanded="false"
+            aria-label="Mở menu"
+          >
+            ☰
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main id="main" class="site-main">
+      <section class="hero" aria-label="Ưu đãi nổi bật">
+        <div class="hero-track">
+          <article class="hero-slide active">
+            <div class="hero-inner container">
+              <div class="hero-copy">
+                <span class="hero-kicker">Giòn vàng · nóng hổi</span>
+                <h1>Giòn tan cùng Texas Chicken</h1>
+                <p>
+                  Thịt gà mọng nước, lớp vỏ giòn rụm và những loại sốt được pha
+                  riêng cho một bữa thật vui.
+                </p>
+                <div class="hero-actions">
+                  <a class="btn btn-dark" href="pages/menu.html">Đặt ngay →</a
+                  ><a class="btn btn-secondary" href="pages/menu.html"
+                    >Xem menu</a
+                  >
+                </div>
+              </div>
+              <div class="hero-visual">
+                <img
+                  src="assets/images/banners/hero-chicken.svg"
+                  alt="Minh họa món gà rán Texas Chicken"
+                  data-hero-category="fried-chicken"
+                />
+                <span class="hero-food-label">Nóng giòn mỗi ngày</span>
+              </div>
+            </div>
+          </article>
+          <article class="hero-slide">
+            <div class="hero-inner container">
+              <div class="hero-copy">
+                <span class="hero-kicker">Chia sẻ niềm vui</span>
+                <h1>Combo ngon, vui trọn bữa</h1>
+                <p>
+                  Phần ăn đủ đầy cho bạn bè và gia đình, giá mềm hơn khi gọi
+                  chung.
+                </p>
+                <div class="hero-actions">
+                  <a
+                    class="btn btn-primary"
+                    href="pages/menu.html?category=combo"
+                    >Chọn combo →</a
+                  >
+                </div>
+              </div>
+              <div class="hero-visual">
+                <img
+                  src="assets/images/products/combo.svg"
+                  alt="Minh họa combo Texas Chicken"
+                  data-hero-category="combo"
+                />
+                <span class="hero-food-label">Combo đủ đầy</span>
+              </div>
+            </div>
+          </article>
+          <article class="hero-slide">
+            <div class="hero-inner container">
+              <div class="hero-copy">
+                <span class="hero-kicker">Happy Weekend</span>
+                <h1>Ưu đãi vàng cuối tuần</h1>
+                <p>
+                  Giảm 20% cho đơn từ 250K với mã TEXAS_NUM3. Bữa cuối tuần thêm
+                  giòn, thêm vui.
+                </p>
+                <div class="hero-actions">
+                  <a class="btn btn-primary" href="pages/menu.html"
+                    >Khám phá ngay →</a
+                  >
+                </div>
+              </div>
+              <div class="hero-visual">
+                <img
+                  src="assets/images/products/burger.svg"
+                  alt="Minh họa burger gà Texas Chicken"
+                  data-hero-category="burger"
+                />
+                <span class="hero-food-label">Món mới phải thử</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <button
+          class="hero-arrow prev"
+          data-hero-prev
+          type="button"
+          aria-label="Slide trước"
+        >
+          ‹</button
+        ><button
+          class="hero-arrow next"
+          data-hero-next
+          type="button"
+          aria-label="Slide sau"
+        >
+          ›
+        </button>
+        <div class="hero-nav" aria-label="Chọn slide">
+          <button
+            class="hero-dot active"
+            type="button"
+            aria-label="Slide 1"
+          ></button
+          ><button class="hero-dot" type="button" aria-label="Slide 2"></button
+          ><button class="hero-dot" type="button" aria-label="Slide 3"></button>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Chọn theo sở thích</span>
+              <h2 class="section-title">Hôm nay ăn gì?</h2>
+            </div>
+            <p>
+              Từ món gà trứ danh đến đồ uống mát lạnh — luôn có lựa chọn đúng ý
+              bạn.
+            </p>
+          </div>
+          <div class="category-grid" data-categories></div>
+        </div>
+      </section>
+      <section class="section" id="combo">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Đi cùng nhau</span>
+              <h2 class="section-title">Combo nổi bật</h2>
+            </div>
+            <a class="btn btn-secondary" href="pages/menu.html?category=combo"
+              >Xem tất cả →</a
+            >
+          </div>
+          <div class="product-grid" data-featured-products></div>
+        </div>
+      </section>
+      <section class="section" id="promotions">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Ưu đãi hiện tại</span>
+              <h2 class="section-title">Ăn ngon, giá vui</h2>
+            </div>
+          </div>
+          <div class="promo-grid">
+            <article class="promo-card card">
+              <img class="promo-bg" src="assets/images/promos/promo-combo.jpg" alt="" aria-hidden="true" loading="lazy">
+              <span class="badge">Cuối tuần</span>
+              <h3>Combo 2 người giảm đến 20%</h3>
+              <p>Nhập TEXAS_NUM3 cho đơn từ 250K.</p>
+              <a class="btn btn-dark" href="pages/menu.html?category=combo"
+                >Đặt combo</a
+              ><span class="promo-num">20%</span>
+            </article>
+            <article class="promo-card card">
+              <img class="promo-bg" src="assets/images/promos/promo-freeship.jpg" alt="" aria-hidden="true" loading="lazy">
+              <span class="badge">Mỗi ngày</span>
+              <h3>Freeship đơn từ 199K</h3>
+              <p>Dùng TEXAS_NUM2 để miễn phí giao hàng.</p>
+              <a class="btn btn-primary" href="pages/menu.html">Chọn món</a
+              ><span class="promo-num">0₫</span>
+            </article>
+            <article class="promo-card card">
+              <img class="promo-bg" src="assets/images/promos/promo-voucher.jpg" alt="" aria-hidden="true" loading="lazy">
+              <span class="badge">Voucher</span>
+              <h3>Giảm 10% tối đa 50K</h3>
+              <p>Dùng mã TEXAS_NUM1 tại giỏ hàng.</p>
+              <a class="btn btn-primary" href="pages/menu.html">Dùng ngay</a
+              ><span class="promo-num">10%</span>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="index.html"
+              ><img class="brand-logo" src="assets/logo-page.png" alt="" aria-hidden="true" />TEXAS</a
+            >
+            <p>
+              Giòn ngon trong từng miếng. Website demo học tập, không đại diện
+              cho chuỗi cửa hàng có thật.
+            </p>
+          </div>
+          <div>
+            <h2 class="footer-title">Khám phá</h2>
+            <div class="footer-links">
+              <a href="pages/menu.html">Menu</a
+              ><a href="pages/menu.html?category=combo">Combo</a
+              ><a href="index.html#promotions">Khuyến mãi</a>
+            </div>
+          </div>
+          <div>
+            <h2 class="footer-title">Hỗ trợ</h2>
+            <div class="footer-links">
+              <span>1900 2026 (demo)</span><span>hello@texaschicken.local</span
+              ><span>08:00 – 22:00</span>
+            </div>
+          </div>
+          <div>
+            <h2 class="footer-title">Theo dõi</h2>
+            <div class="footer-links">
+              <a href="https://www.facebook.com" rel="noopener noreferrer"
+                >Facebook</a
+              ><a href="https://www.instagram.com" rel="noopener noreferrer"
+                >Instagram</a
+              ><a href="https://www.tiktok.com" rel="noopener noreferrer"
+                >TikTok</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <span>© 2026 Texas Chicken. Demo project.</span
+          ><span>Made fresh for learning.</span>
+        </div>
+      </div>
+    </footer>
+    <script src="data/products.js?v=3"></script>
+    <script src="js/storage.js?v=2"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js?v=4"></script>
+  </body>
+</html>
